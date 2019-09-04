@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cnic: MyString
+  age: 1
+  gender: MyString
+  address: MyString
+  mobile_number: MyString
+  apply_for: MyString
+  highest_education: MyString
+  subject_or_areas: MyString
+  qualitative_research_experience: MyString
+  upload_cv: MyString
+
+two:
+  name: MyString
+  cnic: MyString
+  age: 1
+  gender: MyString
+  address: MyString
+  mobile_number: MyString
+  apply_for: MyString
+  highest_education: MyString
+  subject_or_areas: MyString
+  qualitative_research_experience: MyString
+  upload_cv: MyString

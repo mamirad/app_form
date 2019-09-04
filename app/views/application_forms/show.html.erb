@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @application_form.name %>
+</p>
+
+<p>
+  <strong>Cnic:</strong>
+  <%= @application_form.cnic %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @application_form.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @application_form.gender %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @application_form.address %>
+</p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @application_form.mobile_number %>
+</p>
+
+<p>
+  <strong>Apply for:</strong>
+  <%= @application_form.apply_for %>
+</p>
+
+<p>
+  <strong>Highest education:</strong>
+  <%= @application_form.highest_education %>
+</p>
+
+<p>
+  <strong>Subject or areas:</strong>
+  <%= @application_form.subject_or_areas %>
+</p>
+
+<p>
+  <strong>Qualitative research experience:</strong>
+  <ul>
+      <% @application_form.qualitative_research_experiences.each do |list| %>
+<li><%=list.name%></li>
+  <%end%>
+  </ul>
+
+</p>
+
+<p>
+  <strong>Upload cv:</strong>
+
+  <%= image_tag  (@application_form.upload_cv.url), :size => "260x180" %>
+</p>
+
+<%= link_to 'Edit', edit_application_form_path(@application_form) %> |
+<%= link_to 'Back', application_forms_path %>
